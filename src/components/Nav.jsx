@@ -2,23 +2,24 @@ import { headerLogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Nav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
-        <a href="/">
+        <Link to="/">
           <img src={headerLogo} alt="logo" width={130} height={29} />
-        </a>
+        </Link>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((navLink) => (
             <li className="" key={navLink.label}>
-              <a
+              <Link
                 className="font-montserrat leading-normal text-lg text-slate-gray"
-                href={navLink.href}
+                to={navLink.href}
               >
                 {navLink.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -28,12 +29,12 @@ const Nav = () => {
             <ul className="w-full flex flex-col justify-center items-center gap-8">
               {navLinks.map((navLink) => (
                 <li className="" key={"mobile_" + navLink.label}>
-                  <a
+                  <Link
                     className="font-montserrat leading-normal text-lg text-slate-gray"
-                    href={navLink.href}
+                    to={navLink.href}
                   >
                     {navLink.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
