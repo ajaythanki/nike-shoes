@@ -10,6 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/product/:name" element={<Product name={""} />} />
       </Routes>
     </Router>
   </React.StrictMode>
