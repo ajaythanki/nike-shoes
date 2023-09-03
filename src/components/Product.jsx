@@ -11,7 +11,7 @@ const Product = () => {
   return (
     <main className="relative">
       <Nav />
-      <section className="xl:padding-l wide:padding-r padding-b" id="home">
+      <section className="xl:padding-l wide:padding-r xl:padding-b" id="home">
         <ProductHero {...product}/>
       </section>
       <section className="padding" id="products">

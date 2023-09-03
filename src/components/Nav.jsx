@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x py-8 absolute z-20 w-full">
       <nav className="flex justify-between items-center max-container">
         <Link to="/">
           <img src={headerLogo} alt="logo" width={130} height={29} />
