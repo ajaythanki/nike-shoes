@@ -7,7 +7,7 @@ import Product from './components/Product.jsx'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Router>
+    <Router basename={'/nike-shoes'}>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/product/:name" element={<Product name={""} />} />
