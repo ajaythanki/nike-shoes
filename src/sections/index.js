@@ -7,6 +7,7 @@ import SpecialOffers from "./SpecialOffers";
 import Subscribe from "./Subscribe";
 import SuperQuality from "./SuperQuality";
 import ProductHero from "./ProductHero";
+import SimilarProducts from "./SimilarProducts";
 
 export {
   CustomerReviews,
@@ -17,5 +18,6 @@ export {
   SpecialOffers,
   Subscribe,
   SuperQuality,
-  ProductHero
+  ProductHero,
+  SimilarProducts
 };
